@@ -3,12 +3,14 @@
 ## Major Features and Improvements
 
 *  Added a simple query based driver that supports Span spec and static_range.
-
 *  Added e2e rolling window example/test for Span Resolver.
-
 *  Performance improvement in Transform by avoiding excess encodings and
    decodings when it materializes transformed examples or generates statistics
    (both enabled by default).
+*  Support is added for the JSON_VALUE artifact property type, allowing storage
+   of JSON-compatible objects as artifact metadata.
+*  Support is added for the KFP v2 artifact metadata field when executing using
+   the KFP v2 container entrypoint.
 
 ## Breaking Changes
 
